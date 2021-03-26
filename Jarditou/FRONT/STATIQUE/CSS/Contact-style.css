@@ -1,0 +1,55 @@
+
+.head-title{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+.sub-title {
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+    /* Style inputs group */
+  input[type=text], select, textarea,
+  input[type=date], select, textarea,
+  input[type=email], select, textarea,
+  input[type=number], select, textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .column {
+    float: center;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  .sexe{
+   
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }

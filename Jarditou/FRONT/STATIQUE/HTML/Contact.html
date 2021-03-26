@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\FRONT\STATIQUE\CSS\index-style.css">
+    <link rel="stylesheet" href="\FRONT\STATIQUE\CSS\Contact-style.css">
+    <title>Jarditou Aouadi Khraief</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <!--NAV LOGO-->
+            <div class="logo">
+                <img src="../image\jarditou_logo.jpg" alt="jarditou_logo">
+            </div>
+            <!--NAV-BAR-->
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/FRONT/STATIQUE/HTML/index.html">Accueil</a></li>
+                    <li><a href="http://127.0.0.1:5500/FRONT/STATIQUE/HTML/Tableau.html">Tableau</a></li>
+                    <li><a href="http://127.0.0.1:5500/FRONT/STATIQUE/HTML/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hero-img">
+                <img src="../image\promotion.jpg" alt="promotion">
+            </div>
+            <!--CONTACT FORM-->
+            <div class="head-title">
+                <h2>C O N T A C T</h2>
+            </div>
+            <div class="column">
+                <form>
+                    <div class="sub-title">
+                        <p>
+                        <h4>Ces zones sont obligatoires</h4>
+                        </p>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Vos coordonnées</legend>
+                            <label for="fname">Votre nom*
+                                <input type="text" id="fname" name="votre nom*" placeholder="Votre nom..">
+                            </label>
+                            <label for="lname">Votre prénom*
+                                <input type="text" id="lname" name="votre prenom*" placeholder="Votre prénom..">
+                            </label>
+                            <div class="sexe">
+                                <label for="sexe">Sexe* </label>
+                                <input type="radio" id="sexe" checked="checked" name="sexe">
+                                <label for="feminin">Féminin</label>
+                                <input type="radio" checked="checked" name="sexe">
+                                <label for="masculin">Masculin</label>
+                            </div>
+                            <label for="date-de-naissance">Date de naissance*</label>
+                            <input type="date" name="date-de-naissace" id="date-de-naissace">
+
+                            <label for="code-postal">Code postal </label>
+                            <input type="number" id="cpostale" name="code-postal" placeholder="Code postal">
+
+                            <label for="adressse">Adresse</label>
+                            <input type="text" id="adresse" name="adresse" placeholder="Adresse">
+
+                            <label for="ville">Ville </label>
+                            <input type="text" id="ville" name="ville" placeholder="Ville">
+
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Votre demande</legend>
+                            <label for="sujet">Sujet</label>
+                            <select id="sujet" name="sujet" aria-placeholder="veuillez sélectionner un sujet">
+                                <option value="mes commandes">mes commandes</option>
+                                <option value="question sur un produit">question sur un produit</option>
+                                <option value="réclamation">réclamation</option>
+                                <option value="autres">autres</option>
+                            </select>
+                            <label for="Vquestion">Votre question</label>
+                            <textarea id="Vquestion" name="votre question" placeholder=" votre question.."
+                                style="height:70px"></textarea>
+                        </fieldset>
+                        <input type="checkbox" id="conditions" name="conditions" value="Formulair">
+                        <label for="conditions">* J'acccepte le traitement informatique de ce formulaire</label>
+                        <input type="submit" value="Envoyer">
+                        <input type="submit" value="Annuler">
+                </form>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <div class="footer">
+            <ul class="foot-down">
+                <li><a href="">Mention légales</a></li>
+                <li><a href="">Horaires</a></li>
+                <li><a href="">Plan du site</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

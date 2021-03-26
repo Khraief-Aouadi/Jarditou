@@ -1,0 +1,47 @@
+
+ .tab-title{
+     text-align: center;
+     color: tomato;
+     margin:  5px;
+     padding: 5px;
+ }
+ table {
+    width: 50vh;
+    height: 15vw;
+    margin-top: 10px;
+    padding-top:  10px;
+    float:center;
+    text-align: center;
+    display:table;
+    color: black;
+    border-radius: 10px;
+}
+table img{
+   
+  width: 10vw;
+  height: 15vh;
+  border-radius: 25px;
+  margin:  5px;
+  padding:  5px;
+  display:inline-table;
+}
+
+th td {
+    margin: 10px;
+    padding: 15px;
+    text-decoration:none;
+}
+
+table, th, td {
+    border: 0.1px solid rgb(7, 0, 0);
+    border-width: 5px;
+    border-collapse:collapse;  
+}
+   
+tr:nth-child(even) {
+    background-color: rgb(196, 196, 36);
+}
+tr:nth-child(odd) {
+    background-color: rgb(241, 233, 233);
+}
+

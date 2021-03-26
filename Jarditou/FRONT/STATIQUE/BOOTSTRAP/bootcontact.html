@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--BOOTSTRAP-LINK-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Jarditou</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--NAV-LOGO-->
+        <div class="row ">
+            <div class="row w-25 d-none d-lg-block">
+                <img class="img-thumbnail " src="/FRONT\STATIQUE\image\jarditou_logo.jpg" alt="">
+            </div>
+            <div class="row w-75 d-none d-lg-block float-lg-right ">
+                <p class="text-right display-4 "> Tout le jardin</p>
+            </div>
+        </div>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#!">Jarditou.com</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://127.0.0.1:5500/FRONT/STATIQUE/BOOTSTRAP/bootindex.html">Accueil
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="http://127.0.0.1:5500/FRONT/STATIQUE/BOOTSTRAP/boottab.html">Tableau</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "
+                            href="http://127.0.0.1:5500/FRONT/STATIQUE/BOOTSTRAP/bootcontact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Votre promotion">
+                    <button class="btn btn-success" type="button">Recherche</button>
+                </form>
+            </div>
+        </nav>
+        <!--img-NAV-BAR-->
+        <div class="img-header">
+            <img class="img-fluid rounded-circle" src="/FRONT\STATIQUE\image\promotion.jpg" alt="">
+        </div>
+        <!--CONTAINER-->
+        <div class="container">
+
+            <div class="form-group">
+                <div class="text-body text-left ">
+                    <p>*Ces zones sont obligatoires</p>
+                </div>
+                <legend>Vos coordonnées</legend>
+                <!--FORMS-CONTACT-->
+                <div class="form-group">
+                    <label for="votre-nom">Votre nom*</label>
+                    <input class="form-control" type="text" id="votre-nom" placeholder="Votre nom..">
+                </div>
+
+                <div class="form-group">
+                    <label for="votre-prénom">Votre prénom*</label>
+                    <input class="form-control" type="text" id="votre-prénom" placeholder="Votre-prénom..">
+                </div>
+                <div>
+                    <label for="sexe">Sexe* </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="flexRadioDefault1" name="flexRadioDefault" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">Féminin</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="flexRadioDefault2" name="flexRadioDefault" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">Masculin</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="flexRadioDefault3" name="flexRadioDefault" checked>
+                    <label class="form-check-label" for="flexRadioDefault3">Neutre</label>
+                </div>
+                <div class="form-group">
+                    <label for="date-de-naissace">Date de date de Naissace*</label>
+                    <input class="form-control" type="date" value="2021-03-24" id="date-de-naissance">
+                </div>
+                <div class="form-group">
+                    <label for="adresse">Adresse</label>
+                    <input class="form-control" type="text" value="adresse" id="adresse">
+                </div>
+                <div class="form-group">
+                    <label for="ville">Ville </label>
+                    <input class="form-control" type="text" value="ville" id="ville">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input class="form-control" type="email" id="email" aria-describedby="email"
+                        placeholder="entre email">
+                </div>
+                <legend>Votre demande</legend>
+                <label for="sujet">Sujet</label>
+                <select class="custom-select">
+                    <option selected="">veuillez selectionner un sujet</option>
+                    <option value="mes commandes">mes commandes</option>
+                    <option value="question sur un produit">question sur un produit</option>
+                    <option value="réclamation">réclamation</option>
+                    <option value="autres">autres</option>
+                </select>
+                <div class="form-floating">
+                    <label for="floatingTextarea">Votre question</label>
+                    <textarea class="form-control" id="floatingTextarea" placeholder="laisse un commentaire"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="defaultchek1" value="">
+                    <label class="form-check-label" for="defaultchek1">* J'acccepte le traitement informatique de ce
+                        formulaire</label>
+                </div>
+                <div>
+                    <button class="btn btn-secondary mb-2 border-primary" type="submit" value="envoyer">Envoyer</button>
+                    <button class="btn btn-secondary mb-2 border-primary" type="submit" value="annuler">Annuler</button>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 m-1 w-100">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-md-0 rounded-bottom">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">mention légales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Horaires</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">plan</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
