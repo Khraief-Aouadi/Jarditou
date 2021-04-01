@@ -1,0 +1,160 @@
+ex3.1:
+DEBUT
+	Ecrire "nombre:"
+	lire nbr
+	si nbr>0 Alors
+	Ecrire "positif"
+	sinon
+	Ecrire "negatif"
+	finsi
+	finsi
+finsi
+---------------------------------------------------
+ex3.2
+debut
+ecrire"ecrire eux nombre"
+lire a,b
+si(a<0 et b<0) alors
+ecrire "leur produit est positif"
+sinon
+ecrire "leur produit et negatif"
+finsi
+fin
+------------------------------------------
+ex3.3
+DÉBUT
+   Ecrire " Entre succesivement trois noms:"
+   lire a, b, c
+    si a<b ET b<c Alors
+    Ecrire "ces noms sont classés alphabetiquement"
+    sinon
+    Ecrire "ces noms ne sont pas classés"
+    Finsi
+Fin
+-------------
+ordre alphabetique.
+DÉBUT
+    Ecrire " Entre succesivement nombres:"
+    lire nbr0, nbr1, nbr2
+    si nbr0<nbr1 ET nbr1<nbr2 Alors
+    Ecrire "ces nombre sont classés numérique"
+    sinon
+    Ecrire "ces noms ne sont pas classés"
+    Finsi
+Fin
+---------------------------
+ordre numerique.
+Ex3.4
+Debut
+	Ecrire"nombre:"
+	Lire nbr
+	si nbr<0 alors
+	ecrire "négatif"
+	finsi
+	si nbe>0 alors
+	ecrire "positif"
+	finsi
+	si nbr=0 alors
+	ecrire "null"
+	finsi
+fin
+------------------------------------------
+ex3.5
+DÉBUT
+    Ecrire " produit de deux nombres:"
+    lire a, b
+    Si(a<0 et b<0)ou (a>0 et b>0) Alors
+     Ecrire"leur produit est negatif"
+    sinon
+       Ecrire "leur produit est positif"
+         finsi
+ Fin
+-------------------------------------
+EX3.6
+DÉBUT
+      Ecrire "Entre l'age d'un enfant:"
+        Lire age
+       SI age =>12 Alors
+          Ecrire "Cadet"
+SINON SI age =>10  Alors
+           Ecrire "Minimie"
+SINON SI age =>8 Alors
+           Ecrire "pupille"
+SINON SI age =>6 Alors
+           Ecrire "Poussin"
+       FINSI          
+Fin
+---------------------------------------------------------------
+ex4.1
+DÉBUT
+   Si Tutu <= Toto + 4 ET Tata <> "OK" Alors
+  Tutu= Tutu - 1
+Sinon
+  Tutu= Tutu + 1
+Finsi              
+Fin
+---------------------------------------------------------
+ex4.2
+Variables h, m en Numérique
+Début
+Ecrire "Entrez les heures, puis les minutes : "
+Lire h, m
+m = m + 1
+Si m = 60 Alors
+  m = 0
+  h = h + 1
+FinSi
+Si h = 24 Alors
+  h = 0
+FinSi
+Ecrire "Dans une minute il sera ", h, "heure(s) ", m, "minute(s)"
+Fin
+-------------------------------------------------------------------
+ex4.3
+ 
+Début
+    Ecrire "Entrez les heures, puis les minutes, puis les secondes : "
+    Lire h, m, s
+    s = s + 1
+    Si s = 60 Alors
+      s = 0
+      m = m + 1
+    FinSi
+    Si m = 60 Alors
+     m = 0
+     h = h + 1
+    FinSi
+    Si h = 24 Alors
+     h = 0
+    FinSi
+    Ecrire "Dans une seconde il sera ", h, "h", m, "m et ", s, "s"
+Fin
+-----------------------------------
+ex4.4
+DEBUT
+    ECRIRE "nombre de photocopies effectuées:"
+    LIRE n
+    si n<=10 Alors
+    p= n*0.1
+   SINON SI n<=30 Alors
+    p =10*0.1+(n-10)*0.09
+   SINON
+    p =10*0.1+20*0.09+(n-30)*0.08
+    FINSI    
+    ECRIRE "le prix total est:", p
+FIN
+----------------------------------------------
+ex4.5
+DÉBUT
+ ECRIRE "ENtrez lE sexe M/F:"
+    LIRE sexe
+   ECRIRE "entrez l'age:"
+   LIRE age
+   C1=sexe="M" et age >20
+  C2=sexe="F" et (age>18 et age <35)
+   SI A OU B Alors
+   ECRIRE"imposable"
+   SINON
+  ECRIRE "non imposable"
+   FINSI
+FIN
