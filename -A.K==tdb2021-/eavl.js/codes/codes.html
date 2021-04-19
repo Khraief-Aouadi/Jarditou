@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css.">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container ">
+
+        <div class="tile container">
+            <ul>
+                <li><a href="http://127.0.0.1:5501/index.html">Home sweet home</a></li>
+            </ul>
+        </div>
+        <div class="text-body-container ">
+            <div class="text-row">
+                <div class="text-body">
+                    <h1>Exercice 1:</h1>
+                    <p class="text-md-start">
+                        let age;
+                        <br>Y = 0;
+                        <br>A = 0;
+                        <br>O = 0;
+                        <br> do {
+                        <br> age = parseInt(prompt("Quel est l'âge de la personne ?"));
+                        <br> if (isNaN(age)) { age = parseInt(prompt("On demande des chiffres.. Merci de recommencer.")) }
+                        <br>else if (age
+                        < 20 ) <br>{ Y++;}
+                            <br>else if (age >= 20 && age
+                            <=4 0) <br> { A++;}
+                                <br> else if (age > 40) {
+                                <br> O++; } }
+                                <br> while (age != 100);
+                                <br> alert("Nombre de jeunes : " +
+                                <br> Y + "\nNombre d'adultes : " +
+                                <br> A + "\nNombre de personnes agées : " +
+                                <br> O);
+                    </p>
+
+                </div>
+                <div class="text">
+                    <h1>Exercice 2:</h1>
+                    <p>
+                        <br> var a;
+                        <br> do {
+                        <br> a = prompt("Saisissez un nomre entier");
+                        <br> } while (isNaN(a) || a % 1 !== 0);
+                        <br> document.write("
+                        <br> La table de multiplication du nombre: " + a + ".")
+                        <br> document.write("
+                        < table border>");
+                            <br> for (var i = 1; i
+                            <=1 0; i++) { <br> document.write("
+                                < tr>");
+                                    <br> document.write("
+                                    < td>" + a + " x " + i + " =
+                                        < /td>");
+                                            <br> document.write("
+                                            < td>" + a * i + "
+                                                </>");
+                                                <br> document.write("
+                                                < /tr>");
+                                                    <br> }
+                                                    <br> document.write("
+                                                    < /table>"); </p>
+                </div>
+                <div class="text">
+                    <h1>Exercice 3:</h1>
+                    <p>
+                        <br> function tableName() {
+                        <br> let tab = ["Audrey", "Aurelien", "Flavien", "Jeremy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stephane"];
+                        <br> let tabName = prompt("Veuillez écrire un prénom parmis les suivants : " + tab);
+                        <br> for (let i = 0; i
+                        < tab.length; i++) <br>{ tab[i] = tab[i].toUpperCase();
+                            <br> };
+                            <br> bigName = tabName.toUpperCase();
+                            <br> let check = tab.includes(bigName);
+                            <br> if (check) {
+                            <br> tab.splice(tab.indexOf(bigName), 1);
+                            <br> tab.push("")
+                            <br> } else {
+                            <br> alert("Vous n'avez pas taper un nom parmis les suivants : " + tab);
+                            <br> window.location.reload(tableName());
+                            <br> }
+                            <br> alert("this is the new tab:\n" + tab + '.');
+                            <br> }
+                            <br> tableName();
+                    </p>
+                </div>
+                <div class="text">
+                    <h1>Exercice 4:</h1>
+                    <p>
+                        <br> main()
+                        <br> function main() {
+                        <br> checkAll()
+                        <br> redux(total)
+                        <br> }
+                        <br> function checkAll() {
+                        <br> var total = checkTotal()
+                        <br> checkNumber(total)
+                        <br> }
+                        <br> function redux(total) {
+                        <br> let fdp = 0.02 * total;
+                        <br> let finalPrice
+                        <br> if (total
+                        < 100) { <br> alert('Prix : ' + total)
+                            <br> }
+                            <br> if (total >= 100 && total
+                            <=2 00) { <br> finalPrice = total * 0.95
+                                <br> alert('Prix avant Remise : ' + total + '\n' + 'Prix après remise : ' + finalPrice)
+                                <br> }
+                                <br> if (total > 200) {
+                                <br> finalPrice = total * 0.90
+                                <br> alert('Prix avant Remise : ' + total + '\n' + 'Prix après remise : ' + finalPrice)
+                                <br> } else if (fdp
+                                < 6) { <br> fdp = 6
+                                    <br> }
+                                    <br> if (finalPrice > 500) {
+                                    <br> fdp = 0
+                                    <br> }
+                                    <br> alert('Fais de port :' + fdp)
+                                    <br> }
+                                    <br> function checkNumber(total) {
+                                    <br> if (isNaN(total)) {
+                                    <br> alert('Il faut écrire des nombres')
+                                    <br> checkAll()
+                                    <br> }
+                                    <br> }
+                                    <br> function checkTotal() {
+                                    <br> let prixU = parseFloat(prompt('Prix unitaire'));
+                                    <br> let quantite = parseInt(prompt('Quantité commandée'));
+                                    <br> total = prixU * quantite;
+                                    <br> return total
+                                    <br> }
+                    </p>
+                </div>
+                <div class="text">
+                    <h1>Exercice 5:</h1>
+                    <p>
+                        <br> function validNom() {
+                        <br> if (document.getElementById('votreNom').value == '') {
+                        <br> document.getElementById('nomError').innerHTML = 'Le champ ne peut être vide';
+                        <br> return false;
+                        <br> } else {
+                        <br> document.getElementById('nomError').innerHTML = '';
+                        <br> swal({
+                        <br> icon: "success",
+                        <br> });
+                        <br> return true;
+                        <br> }
+                        <br> }
+                        <br> function validPrenom() {
+                        <br> if (document.getElementById('votrePrenom').value == '') {
+                        <br> document.getElementById('prenomError').innerHTML = 'Le champ ne peut être vide';
+                        <br> return false;
+                        <br> } else {
+                        <br> document.getElementById('prenomError').innerHTML = '';
+                        <br> swal({
+                        <br> icon: "success",
+                        <br> });
+                        <br> return true;
+                        <br> }
+                        <br> }
+                        <br> function validAdresse() {
+                        <br> if (document.getElementById('votreAdresse').value == '') {
+                        <br> document.getElementById('adresseError').innerHTML = 'Le champ ne peut être vide';
+                        <br> return false;
+                        <br> } else {
+                        <br> document.getElementById('adresseError').innerHTML = '';
+                        <br> swal({
+                        <br> icon: "success",
+                        <br> });
+                        <br> return true;
+                        <br> }
+                        <br> }
+                        <br> function validVille() {
+                        <br> if (document.getElementById('votreVille').value == '') {
+                        <br> document.getElementById('villeError').innerHTML = 'Le champ ne peut être vide';
+                        <br> return false;
+                        <br> } else {
+                        <br> document.getElementById('villeError').innerHTML = '';
+                        <br> swal({
+                        <br> icon: "success",
+                        <br> });
+                        <br> return true;
+                        <br> }
+                        <br> }
+                        <br> function validEmail() {
+                        <br> if (document.getElementById('votreEmail').value == '') {
+                        <br> document.getElementById('emailError').innerHTML = 'Le champ ne peut être vide';
+                        <br> return false;
+                        <br> } else {
+                        <br> document.getElementById('emailError').innerHTML = '';
+                        <br> swal({
+                        <br> icon: "success",
+                        <br> });
+                        <br> return true;
+                        <br> }
+                        <br> }
+                        <br> function validcheckBox() {
+                        <br> if (document.getElementById('checkBoxBtn').value == '') {
+                        <br> document.getElementById('checkError').innerHTML = 'Le champ ne peut être vide';
+                        <br> return false;
+                        <br> } else {
+                        <br> document.getElementById('checkError').innerHTML = '';
+                        <br> swal({
+                        <br> icon: "success",
+                        <br> });
+                        <br> return true;
+                        <br> }
+                        <br> }
+                        <br> //--sweetalert2---
+                        <br> function sweetAlert() {
+                        <br> swal("A wild Pikachu appeared! What do you want to do?", {
+                        <br> buttons: {
+                        <br> cancel: "Run away!",
+                        <br> catch: {
+                        <br> text: "Throw Pokéball!",
+                        <br> value: "catch",
+                        <br> },
+                        <br> defeat: true,
+                        <br> },
+                        <br> })
+                        <br> .then((value) => {
+                        <br> switch (value) {
+                        <br>
+                        <br> case "defeat":
+                        <br> swal("Pikachu fainted! You gained 500 XP!");
+                        <br> break;
+                        <br>
+                        <br> case "catch":
+                        <br> swal("Gotcha!", "Pikachu was caught!", "success");
+                        <br> break;
+                        <br>
+                        <br> default:
+                        <br> swal("Got away safely!");
+                        <br> }
+                        <br> });
+                        <br> }
+                        <br> function sweetClick() {
+                        <br> swal({
+                        <br> title: "Are you sure?",
+                        <br> text: "Once deleted, you will not be able to recover this imaginary file!",
+                        <br> icon: "warning",
+                        <br> buttons: true,
+                        <br> dangerMode: true,
+                        <br> })
+                        <br> .then((willDelete) => {
+                        <br> if (willDelete) {
+                        <br> swal("Poof! Your imaginary file has been deleted!", {
+                        <br> icon: "success",
+                        <br> });
+                        <br> } else {
+                        <br> swal("Your imaginary file is safe!");
+                        <br> }
+                        <br> });
+                        <br> }
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

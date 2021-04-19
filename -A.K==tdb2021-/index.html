@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Video Source -->
+    <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Relax-Max(aouadi.khraief)</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="beauty.view.ak.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>JavaScript Evalution </h2>
+            <h3>Exploring The Codes "A.K"</h3>
+            <p>Je n'ai pas choisi ce métier par fuite ou en pensant que jallais gagner des millions et faire une carrière à Hollywood. Non, j'allais en cours comme on va en apprentissage. J'étais heureux dapprendre des Codes, de jouer la trahison, la passion.
+                De jouer à séduire.
+            </p>
+            <a href="http://127.0.0.1:5501/eavl.js/codes/indexcode.html">Explore the codes</a>
+        </div>
+        <ul class="social">
+            <li>
+                <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a>
+            </li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="http://127.0.0.1:5501/index.html">Home sweet home</a></li>
+
+            <li><a href="http://127.0.0.1:5501/eavl.js/exercice%201/index.html">Exercice 1</a></li>
+            <li><a href="http://127.0.0.1:5501/eavl.js/exercice%202/index.html">Execrice 2</a></li>
+            <li><a href="http://127.0.0.1:5501/eavl.js/exercice%203/index.html">Exercice 3</a></li>
+            <li><a href="http://127.0.0.1:5501/eavl.js/exercice%204/index.html">Execrice 4</a></li>
+            <li><a href="http://127.0.0.1:5501/eavl.js/exercice%205/bootcontact.html">Execrice 5</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
