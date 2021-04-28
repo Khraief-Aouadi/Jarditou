@@ -1,4 +1,5 @@
- -------------La base exo1---------
+
+-------------La base exo1---------
 ------------------------------------
 ----eval --script d'implémentation base sous sql--- 
 ------------------------------------------------------
@@ -56,8 +57,10 @@ CONSTRAINT `est_compose_ibfk_2` FOREIGN KEY
             (pro_num) REFERENCES Produit
             (pro_num)
 );
-1.1
-            CREATE INDEX ‘cli-nom’ ON ‘client’ ;
+------------------------------------
+1.1Cr�ez un index sur le champ cli_nom de la table client.
+
+CREATE INDEX client ON client(cli_nom);
 -------------------2eme-prt--------------------------------------
 -----eval table  northwind------
 -----------------------------------------
@@ -165,11 +168,11 @@ Liquids » :
                 MAX(OrderDate) AS "Date de derniére commande"
             FROM
                 orders
-            
-WHERE
+
+            WHERE
     shipname = "du monde entier"
----------------------------------------------------------------------------------------------
-10 - Quel est le délai moyen de livraison en jours ?
+            ---------------------------------------------------------------------------------------------
+            10 - Quel est le délai moyen de livraison en jours ?
             SELECT
                 ROUND(
         AVG(
